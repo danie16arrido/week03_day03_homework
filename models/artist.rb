@@ -17,4 +17,13 @@ class Artist
     result = SqlRunner.run(sql) 
     @id = result.first()['id'].to_i
   end
+
+  def Artist.all()
+    sql = "
+    SELECT * FROM artists;
+    "
+    result = SqlRunner.run(sql)
+    artist_hashes = result.map { |artist| Artist.new(artist)}
+    return artist_hashes
+  end
 end
