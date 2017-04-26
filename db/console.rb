@@ -13,6 +13,13 @@ a1 = {
 album1 = Album.new(a1)
 album1.save()
 
+a2 = {
+  'title' => 'Vobin',
+  'genere' => 'Symphonic Metal',
+  'artist_id' => artist1.id
+}
+album2 = Album.new(a2)
+album2.save()
 
 
 
