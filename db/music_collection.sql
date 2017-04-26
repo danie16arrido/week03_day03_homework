@@ -1,3 +1,4 @@
+DROP TABLE IF EXISTS albums;
 DROP TABLE IF EXISTS artists;
 
 CREATE TABLE artists(
@@ -10,5 +11,5 @@ CREATE TABLE albums(
   name VARCHAR(255),
   title VARCHAR(255),
   genere VARCHAR(255),
-  artist_id REFERENCES artists(id)
+  artist_id INT4 REFERENCES artists(id)
 );
