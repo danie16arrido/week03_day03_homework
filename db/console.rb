@@ -9,7 +9,7 @@ artist2.save()
 
 a1 = {
   'title' => 'Awaking the Centuries',
-  'genere' => 'Neo Classical Metal',
+  'genre' => 'Neo Classical Metal',
   'artist_id' => artist2.id
 }
 album1 = Album.new(a1)
@@ -17,7 +17,7 @@ album1.save()
 
 a2 = {
   'title' => 'Vobin',
-  'genere' => 'Symphonic Metal',
+  'genre' => 'Symphonic Metal',
   'artist_id' => artist1.id
 }
 album2 = Album.new(a2)
@@ -25,7 +25,7 @@ album2.save()
 
 a3 = {
   'title' => 'And Thou Shalt Trust... the Seer',
-  'genere' => 'Symphonic Metal',
+  'genre' => 'Symphonic Metal',
   'artist_id' => artist2.id
 }
 album3 = Album.new(a3)
