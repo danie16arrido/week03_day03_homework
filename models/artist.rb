@@ -1,4 +1,6 @@
 require_relative('../db/sql_runner.rb')
+require_relative('../models/artist.rb')
+require_relative('../models/album.rb')
 
 class Artist
   

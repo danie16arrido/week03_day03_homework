@@ -1,6 +1,9 @@
 require_relative('../db/sql_runner.rb')
+require_relative('../models/album.rb')
+require_relative('../models/artist.rb')
 
 class Album
+
   attr_reader :id
   attr_accessor :title, :genere, :artist_id
 
@@ -65,6 +68,5 @@ class Album
     found = Album.new(album_hash)
     return found
   end
-
-
+  
 end
