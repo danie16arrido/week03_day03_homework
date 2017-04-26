@@ -50,4 +50,15 @@ class Artist
     "
     SqlRunner.run(sql)
   end
+
+  def Artist.find(sought_id)
+    sql = "
+    SELECT * FROM artists WHERE id = #{sought_id}
+    "
+    result = SqlRunner.run(sql)
+    artist_hash = result.first
+    found = Artist.new(artist_hash)
+    return found
+  end
+
 end
